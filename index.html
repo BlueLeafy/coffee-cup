@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<!-- responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Internet Explorer -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Coffee Cup</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/0dd9b4cc4e.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav id="navbar" class="sticky">
+  <div class="navbar-container">
+    <div id="nav-header"> <a href="#header-hero" class="logo"><span>Coffee Cup</span></a> 
+      
+      <!-- toggle mobile menu -->
+      <div id="main-nav-wrap"> 
+        <!-- hamburger with input check box -->
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="main-nav">
+          <ul>
+            <li class="nav-item"> <a href="#header-hero">home</a> </li>
+            <li class="nav-item"> <a href="#skills">about</a> </li>
+            <li class="nav-item"> <a href="#gallery">gallery</a> </li>
+            <li class="nav-item"> <a href="#contact">contacts</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END --> 
+<!-- HEADER HERO -->
+<header id="header-hero">
+  <div class="hero-wrap container-padding">
+    <div class="hero-text">
+      <h1>Great Coffee</h1>
+      <p>a great way to start the day</p>
+      <a href="#gallery" class="hero-btn">see more</a> </div>
+  </div>
+</header>
+<!-- HEADER HERO END --> 
+<!-- DIVIDER -->
+<div class="divider"></div>
+<!-- DIVIDER END --> 
+<!-- SKILLS -->
+<div id="skills" class="scroll-margin pt-pb-10">
+  <section id="skills-wrap" class="container-padding">
+    <div class="skill">
+      <div class="skill-wrap">
+        <div class="skill-icon"><i class="fab fa-angellist"></i></div>
+        <div class="skill-text">
+          <h2>Aromafull</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, veniam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-wrap">
+        <div class="skill-icon"> <i class="fas fa-mug-hot"></i> </div>
+        <div class="skill-text">
+          <h2>Warm</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, veniam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-wrap">
+        <div class="skill-icon"><i class="fas fa-bomb"></i></div>
+        <div class="skill-text">
+          <h2>Energy</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, veniam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- SKILLS END --> 
+<!-- DIVIDER -->
+<div class="divider"></div>
+<!-- DIVIDER END --> 
+<!-- GALLERY -->
+<div id="gallery" class="scroll-margin pt-pb-10">
+  <section id="gallery-wrap" class="container-padding">
+    <div class="gallery-item"> <a href="#target-01"> <img src="clay-banks-_wkd7XBRfU4-unsplash.jpg" alt=""> </a> </div>
+    <div class="gallery-item"> <a href="#target-02"> <img src="mike-kenneally-unsplash-02.jpg" alt=""> </a> </div>
+    <div class="gallery-item"> <a href="#target-03"> <img src="mike-marquez-VnlyIQxQS10-unsplash.jpg" alt=""> </a> </div>
+    <div class="gallery-item"> <a href="#target-04"> <img src="natanja-grun-X2s8GhnQmds-unsplash.jpg" alt=""> </a> </div>
+    <div class="gallery-item"> <a href="#target-05"> <img src="nathan-dumlao-pMW4jzELQCw-unsplash.jpg" alt=""> </a> </div>
+    <div class="gallery-item"> <a href="#target-06"> <img src="nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt=""> </a> </div>
+  </section>
+  <!-- LIGHTBOX -->
+  <div class="lightbox-target" id="target-01"> <img src="clay-banks-_wkd7XBRfU4-unsplash.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <div class="lightbox-target" id="target-02"> <img src="mike-kenneally-unsplash-02.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <div class="lightbox-target" id="target-03"> <img src="mike-marquez-VnlyIQxQS10-unsplash.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <div class="lightbox-target" id="target-04"> <img src="natanja-grun-X2s8GhnQmds-unsplash.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <div class="lightbox-target" id="target-05"> <img src="nathan-dumlao-pMW4jzELQCw-unsplash.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <div class="lightbox-target" id="target-06"> <img src="nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt=""> <a href="#gallery" class="lightbox-close"></a> </div>
+  <!-- LIGHTBOX END --> 
+</div>
+<!-- GALLERY END --> 
+<!-- DIVIDER -->
+<div class="divider"></div>
+<!-- DIVIDER END --> 
+<!-- CONTACT -->
+<div id="contact" class="scroll-margin">
+  <section id="contact-wrap">
+    <div id="form-wrap">
+      <header id="form-header">
+        <h3>Tell us about you</h3>
+      </header>
+      <form id="contact-form">
+        <input type="text" id="first-name" name="First Name" placeholder="First Name">
+        <input type="text" id="last-name" name="Last Name" placeholder="Last Name">
+        <input type="email" id="email" name="Email" placeholder="example@example.com">
+        <input type="tel" id="phone" name="Mobilephone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="+44 0344 544 998">
+        <div class="radio">
+          <input type="radio" id="decaf" name="coffee" value="decaf">
+          <label for="decaf">decaf</label>
+          <br>
+          <input type="radio" id="strong" name="coffee" value="strong">
+          <label for="strong">strong</label>
+          <br>
+          <input type="radio" id="mild" name="coffee" value="mild">
+          <label for="mild">mild</label>
+        </div>
+        <select name="brand" id="brand">
+          <option value="choose" selected>choose your brand</option>
+          <option value="lavazza">Lavazza</option>
+          <option value="motta">Motta</option>
+          <option value="goppion">Goppion</option>
+          <option value="carraro">Carraro</option>
+        </select>
+        <textarea id="message" name="message" placeholder="Write you impression here"></textarea>
+        <button type="button" onClick="alert('Submitted!')">Submit</button>
+      </form>
+    </div>
+    <div id="contact-info">
+      <address>
+      <b>Coffee Cup</b> <br>
+      5 Nailed Street <br>
+      Rome <br>
+      Italy <br>
+      <b>t:</b> +44 5555 555 555 <br>
+      <b>e:</b> example@example.com
+      </address>
+      <h4>Opening Times</h4>
+      <p>Mon - Fri 09:00 - 17:00 <br>
+        Sat - Sun Closed </p>
+    </div>
+  </section>
+</div>
+<!-- CONTACT END --> 
+<!-- DIVIDER -->
+<div class="divider"></div>
+<!-- DIVIDER END --> 
+<!-- FOOTER -->
+<div id="footer" class="scroll-margin">
+  <section id="footer-wrap" class="container-padding">
+    <p> Coffee Cup &copy; Copyright reserved 2020 </p>
+    <div class="line"></div>
+    <div class="social">
+      <div class="social-item"> <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a> </div>
+      <div class="social-item"> <a href="" target="_blank"><i class="fab fa-pinterest-square"></i></a> </div>
+      <div class="social-item"><a href="" target="_blank"> <i class="fab fa-instagram-square"></i></a> </div>
+      <div class="social-item"><a href="" target="_blank"> <i class="fab fa-twitter-square"></i></a> </div>
+    </div>
+  </section>
+</div>
+<!-- FOOTER END -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* font and colors */
+$main-font: "Roboto", sans-serif;
+$second-font: "Roboto Mono", monospace;
+$clr-brown-one: rgb(217, 205, 191);
+$clr-brown-two: rgb(191, 145, 105);
+$clr-brown-three: rgb(38, 24, 16);
+$clr-brown-four: rgb(166, 107, 73);
+$clr-brown-five: rgb(115, 65, 47);
+$clr-black: rgb(0, 0, 0);
+$clr-white: rgb(255, 255, 255);
+/* container */
+.container-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* media queries */
+// Breakpoints variable
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+/* mixin */
+// Respond Above
+@mixin respond-above($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map
+  } @else {
+    // Log a warning
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+/*| text |*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $second-font;
+}
